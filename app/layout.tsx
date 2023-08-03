@@ -1,9 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Header from "./header";
-
-const inter = Inter({ subsets: ["latin"] });
+import { karla, gloria400 } from "@/fonts";
+import clsx from "clsx";
 
 export const metadata: Metadata = {
   title: "dani-fenske.dev",
@@ -17,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={clsx(karla.variable, gloria400.variable, "h-screen")}>
         <Header />
         {children}
         <footer>Footer</footer>
