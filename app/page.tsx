@@ -10,8 +10,9 @@ export default function Home() {
         width={300}
         height={300}
         className="mx-auto"
-        blurDataURL="../public/Headshot-small.png"
+        blurDataURL="./Headshot-small.png"
         placeholder="blur"
+        priority
       />
       <h1 className="text-center my-2">👋🏼 My name is Dani Fenske.</h1>
       <p className="mx-auto md:w-1/2 text-justify">

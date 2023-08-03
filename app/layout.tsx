@@ -21,7 +21,7 @@ export default function RootLayout({
         className={clsx(
           karla.variable,
           bungee.variable,
-          "flex flex-col h-screen"
+          "flex flex-col min-h-screen"
         )}
       >
         <Header />
