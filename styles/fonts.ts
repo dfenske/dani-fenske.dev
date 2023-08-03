@@ -1,10 +1,10 @@
-import { Karla, Gloria_Hallelujah } from "next/font/google";
+import { Karla, Bungee } from "next/font/google";
 
 const karla = Karla({ subsets: ["latin"], variable: "--font-karla" });
-const gloria400 = Gloria_Hallelujah({
+const bungee = Bungee({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-gloria400",
+  variable: "--font-bungee",
 });
 
-export { karla, gloria400 };
+export { karla, bungee };

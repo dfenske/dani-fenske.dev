@@ -1,11 +1,11 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Header from "./header";
-import { karla, gloria400 } from "@/fonts";
+import { karla, bungee } from "@/fonts";
 import clsx from "clsx";
 
 export const metadata: Metadata = {
-  title: "dani-fenske.dev",
+  title: "Dani Fenske's Portfolio",
   description: "Dani Fenske's Portfolio",
 };
 
@@ -16,10 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx(karla.variable, gloria400.variable, "h-screen")}>
+      <body className={clsx(karla.variable, bungee.variable, "h-screen")}>
         <Header />
-        {children}
-        <footer>Footer</footer>
+        <div className="page">{children}</div>
+        <footer className="absolute inset-x-0 bottom-0 h-16">Footer</footer>
       </body>
     </html>
   );

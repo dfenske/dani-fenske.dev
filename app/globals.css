@@ -28,5 +28,12 @@ body {
 }
 
 h1 {
-  font-family: var(--font-gloria400);
+  font-family: var(--font-bungee);
+}
+
+.page {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  outline: 1px solid rgb(var(--foreground-rgb));
+  padding: 1rem;
 }

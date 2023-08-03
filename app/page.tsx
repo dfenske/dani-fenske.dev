@@ -1,11 +1,11 @@
 export default function Home() {
   return (
     <div>
-      <h1>dani-fenske.dev</h1>
+      <h1>👋🏼 My name is Dani Fenske.</h1>
       <p>
-        Hello! My name is Dani Fenske. I am a software engineer in Seattle, WA.
-        I spend my time creating websites using React and TypeScript, and I have
-        been known to venture to the backend towards Golang and C#.{" "}
+        I am a software engineer in Seattle, WA. I spend my time creating
+        websites using React and TypeScript, and I have been known to venture to
+        the backend towards Golang and C#.{" "}
       </p>
       <ul>
         <li>
