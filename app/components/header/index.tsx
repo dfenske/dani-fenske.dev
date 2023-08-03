@@ -1,4 +1,11 @@
-import { FiHome, FiTrendingUp, FiAward, FiEdit, FiMail } from "react-icons/fi";
+import {
+  FiAward,
+  FiBookOpen,
+  FiEdit,
+  FiHome,
+  FiMail,
+  FiTrendingUp,
+} from "react-icons/fi";
 
 export default function Header() {
   return (
@@ -15,6 +22,9 @@ export default function Header() {
         </a>
         <a href="/blog-posts" className="mx-2">
           <FiEdit />
+        </a>
+        <a href="/about-me" className="mx-2">
+          <FiBookOpen />
         </a>
         <a href="/contact" className="mx-2">
           <FiMail />
