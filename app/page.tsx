@@ -1,6 +1,10 @@
+import Image from "next/image";
+import profilePic from "../public/Headshot.png";
+
 export default function Home() {
   return (
     <div>
+      <Image src={profilePic} alt="Picture of me" width={300} height={300} />
       <h1>👋🏼 My name is Dani Fenske.</h1>
       <p>
         I am a software engineer in Seattle, WA. I spend my time creating
