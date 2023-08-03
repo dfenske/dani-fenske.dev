@@ -1,6 +1,6 @@
 export default function WorkHistory() {
   return (
-    <div>
+    <>
       <h1>Work History</h1>
       <ul>
         <li>
@@ -16,6 +16,6 @@ export default function WorkHistory() {
           <a href="/work-history/square">Work History: Square</a>
         </li>
       </ul>
-    </div>
+    </>
   );
 }

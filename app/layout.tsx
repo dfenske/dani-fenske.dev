@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Header from "./header";
+import Header from "./components/header";
+import Footer from "./components/footer";
 import { karla, bungee } from "@/fonts";
 import clsx from "clsx";
 
@@ -16,10 +17,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx(karla.variable, bungee.variable, "h-screen")}>
+      <body
+        className={clsx(
+          karla.variable,
+          bungee.variable,
+          "flex flex-col h-screen"
+        )}
+      >
         <Header />
-        <div className="page">{children}</div>
-        <footer className="absolute inset-x-0 bottom-0 h-16">Footer</footer>
+        <div className="m-4 rounded-lg dark:outline-white outline-black p-4 outline-1 outline flex-1">
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );

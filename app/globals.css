@@ -3,14 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-primary: 0, 0, 0;
+  --foreground-secondary: 50, 50, 50;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
+    --foreground-primary: 255, 255, 255;
+    --foreground-secondary: 205, 205, 205;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
@@ -18,7 +20,7 @@
 
 body {
   font-family: var(--font-karla);
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--foreground-primary));
   background: linear-gradient(
       to bottom,
       transparent,
@@ -27,13 +29,18 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Headers */
 h1 {
   font-family: var(--font-bungee);
+  font-size: 6rem;
 }
 
-.page {
-  margin: 1rem;
-  border-radius: 0.5rem;
-  outline: 1px solid rgb(var(--foreground-rgb));
-  padding: 1rem;
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+a:hover {
+  color: rgb(var(--foreground-secondary));
 }

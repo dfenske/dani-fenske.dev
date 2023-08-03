@@ -1,7 +1,7 @@
-export default function Contact() {
+export default function Avanade() {
   return (
-    <div>
-      <h1>Contact</h1>
-    </div>
+    <>
+      <h1>Avanade</h1>
+    </>
   );
 }
