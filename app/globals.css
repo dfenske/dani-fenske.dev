@@ -9,13 +9,11 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-primary: 255, 255, 255;
-    --foreground-secondary: 205, 205, 205;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html.dark:root {
+  --foreground-primary: 255, 255, 255;
+  --foreground-secondary: 205, 205, 205;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
 }
 
 body {
@@ -27,6 +25,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  transition: background 0.5s ease-in-out;
 }
 
 /* Headers */
