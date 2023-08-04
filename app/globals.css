@@ -32,15 +32,27 @@ body {
 /* Headers */
 h1 {
   font-family: var(--font-bungee);
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
 a:hover {
   color: rgb(var(--foreground-secondary));
+}
+
+.blinking-cursor:after {
+  content: "|";
+  @apply text-slate-300;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
