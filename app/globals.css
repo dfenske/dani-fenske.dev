@@ -25,7 +25,6 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  transition: background 0.5s ease-in-out;
 }
 
 /* Headers */
@@ -54,4 +53,12 @@ a:hover {
   50% {
     opacity: 0;
   }
+}
+
+/* react-tooltip requires two levels of specificity to override styles */
+.header .tooltip {
+  font-family: var(--font-karla);
+  font-size: 0.8rem;
+  opacity: 1;
+  padding: 0 0.75rem;
 }
