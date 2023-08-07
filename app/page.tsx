@@ -7,10 +7,8 @@ import { useState, useEffect } from "react";
 export default function Home() {
   const handWavingEmoji = "\u{1F44B}";
   const message = `${handWavingEmoji} Hi, my name is Dani Fenske.`;
-  const blurb =
-    "I am a full-stack software engineer in Seattle, WA, specializing in creating websites using React and TypeScript.";
   const [heading, setHeading] = useState("");
-  const [paragraph, setParagraph] = useState("");
+  const [paragraphShown, setParagraphShown] = useState(false);
 
   useEffect(() => {
     if (message !== heading) {
@@ -22,17 +20,10 @@ export default function Home() {
         );
       }, 100);
       return () => clearTimeout(timeout);
-    } else if (blurb !== paragraph) {
-      const timeout = setTimeout(() => {
-        setParagraph(
-          Array.from(blurb)
-            .slice(0, paragraph.length + 1)
-            .join("")
-        );
-      }, 20);
-      return () => clearTimeout(timeout);
+    } else {
+      setParagraphShown(true);
     }
-  }, [heading, message, paragraph]);
+  }, [heading, message]);
 
   return (
     <>
@@ -47,7 +38,14 @@ export default function Home() {
         priority
       />
       <h1 className="text-center my-2 blinking-cursor">{heading}</h1>
-      <p className="mx-auto md:w-1/2 text-center">{paragraph}</p>
+      <p
+        className={`mx-auto md:w-1/2 text-center transition-[opacity] duration-[1300ms] ease-in-out delay-500 ${
+          paragraphShown ? "opacity-1" : "opacity-0"
+        }`}
+      >
+        I am a full-stack software engineer in Seattle, WA, specializing in
+        creating websites using React and TypeScript.
+      </p>
     </>
   );
 }
