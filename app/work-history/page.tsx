@@ -8,31 +8,31 @@ export default function WorkHistory() {
   return (
     <>
       <h1>Work History</h1>
-      <div className="">
-        <div className="grid md:grid-cols-2 gap-4 ">
+      <div className="flex justify-center">
+        <div className="grid md:grid-cols-2 gap-4 align-center max-w-[1000px]">
           <Card
-            header="Avanade - Consultant"
-            subheader="Sep. 2014 - Dec. 2016"
-            img={<AvanadeLogo />}
-            href="/work-history/avanade"
+            header="Outreach"
+            subheader="Staff Software Engineer | Aug. 2021 - Present"
+            img={<OutreachLogo />}
+            href="/work-history/outreach"
           />
           <Card
-            header="PayScale - Technical Lead, Sr. Software Engineer"
-            subheader="Apr. 2017 - Dec. 2021"
-            img={<PayscaleLogo />}
-            href="/work-history/payscale"
-          />
-          <Card
-            header="Square - Senior Software Engineer"
-            subheader="Jan. 2021 - Aug. 2021"
+            header="Square"
+            subheader="Senior Software Engineer | Jan. 2021 - Aug. 2021"
             img={<SquareLogo />}
             href="/work-history/square"
           />
           <Card
-            header="Outreach - Staff Software Engineer"
-            subheader="Aug. 2021 - Present"
-            img={<OutreachLogo />}
-            href="/work-history/outreach"
+            header="PayScale"
+            subheader="Technical Lead, Sr. Software Engineer | Apr. 2017 - Dec. 2021"
+            img={<PayscaleLogo />}
+            href="/work-history/payscale"
+          />
+          <Card
+            header="Avanade"
+            subheader="Consultant | Sep. 2014 - Dec. 2016"
+            img={<AvanadeLogo />}
+            href="/work-history/avanade"
           />
         </div>
       </div>
