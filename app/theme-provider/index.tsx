@@ -1,5 +1,7 @@
 "use client";
 import React, { createContext, useState, useContext, useEffect } from "react";
+import { karla, bungee } from "@/fonts";
+import clsx from "clsx";
 
 interface Theme {
   toggleTheme: () => void;
@@ -22,18 +24,29 @@ export const useTheme = (): Theme => {
 export const ThemeProvider = (props: { children: React.ReactNode }) => {
   const { children } = props;
 
-  const [isDarkMode, setIsDarkMode] = useState(
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  );
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  // State to track whether the theme has been initialized
+  const [themeInitialized, setThemeInitialized] = useState(false);
 
-  // Load the saved theme preference from localStorage on initial render
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    setIsDarkMode(savedTheme === "dark");
+    // Use the user's OS theme preference if they haven't explicitly set a preference
+    if (
+      typeof window !== "undefined" &&
+      localStorage.getItem("theme") === null
+    ) {
+      setIsDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches);
+    } else if (localStorage.getItem("theme") !== null) {
+      // Use the user's preference from localStorage if they have chosen a preference
+      const savedTheme = localStorage.getItem("theme");
+      setIsDarkMode(savedTheme === "dark");
+    }
+    // Mark the theme as initialized after applying the correct theme
+    setThemeInitialized(true);
   }, []);
 
   // Set the class on the html element to apply the theme styles
   useEffect(() => {
+    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
     if (isDarkMode) {
       document.documentElement.classList.add("dark");
     } else {
@@ -46,11 +59,6 @@ export const ThemeProvider = (props: { children: React.ReactNode }) => {
     setIsDarkMode((prev) => !prev);
   };
 
-  // Save the theme preference to localStorage on theme change
-  useEffect(() => {
-    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
-  }, [isDarkMode]);
-
   // Define the theme object with the required colors for dark and light modes
   const theme: Theme = {
     toggleTheme,
@@ -58,6 +66,19 @@ export const ThemeProvider = (props: { children: React.ReactNode }) => {
   };
 
   return (
-    <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
+    <html lang="en">
+      <body
+        className={clsx(
+          karla.variable,
+          bungee.variable,
+          "flex flex-col min-h-screen",
+          {
+            ["hidden"]: !themeInitialized,
+          }
+        )}
+      >
+        <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
+      </body>
+    </html>
   );
 };
