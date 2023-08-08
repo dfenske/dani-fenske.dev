@@ -9,6 +9,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: "#ffffff",
+        secondary: "#eeeeee",
+        primaryDark: "#000000",
+        secondaryDark: "#111111",
+        primaryBg: "#000000",
+        secondaryBg: "#111111",
+        primaryDarkBg: "#ffffff",
+        secondaryDarkBg: "#eeeeee",
+
         seaSalt: "rgb(248, 246, 246)",
         sky: "rgb(203, 243, 240)",
         ocean: "rgb(46, 196, 182)",

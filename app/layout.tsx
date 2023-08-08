@@ -17,9 +17,7 @@ export default function RootLayout({
   return (
     <ThemeProvider>
       <Header />
-      <div className="m-4 rounded-lg dark:outline-white outline-black p-4 outline-1 outline flex-1">
-        {children}
-      </div>
+      <div className="m-4 p-4 flex-1">{children}</div>
       <Footer />
     </ThemeProvider>
   );

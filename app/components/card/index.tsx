@@ -9,7 +9,7 @@ export default function Card(props: {
   const { header, href, subheader, img } = props;
   return (
     <a
-      className="p-4 dark:bg-slate-800 dark:text-seaSalt bg-white text-oceanDark rounded-lg max-w-[500px]"
+      className="p-4 dark:bg-green-950 dark:text-white dark:border-white border-emerald-900 border-2 bg-white text-emerald-900 rounded-lg max-w-[500px]"
       href={href}
     >
       <div className="text-xl min-h-[56px] border-b-[1px] border-oceanDark py-3">

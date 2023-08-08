@@ -3,24 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --sea-salt: 248, 246, 246;
-  --sky: 203, 243, 240;
-  --ocean: 46, 196, 182;
-  --pine: 27, 114, 106;
-  --pine-dark: 14, 64, 59;
-  --creamsicle: 255, 191, 105;
-  --orange-julius: 255, 159, 28;
-
   --foreground-primary: 0, 0, 0;
   --foreground-secondary: 50, 50, 50;
-  --background-start-rgb: var(--sea-salt);
-  --background-end-rgb: var(--sky);
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 205, 255, 235;
 }
 
 html.dark:root {
-  --foreground-primary: var(--sea-salt);
+  --foreground-primary: 255, 255, 255;
   --foreground-secondary: 205, 205, 205;
-  --background-start-rgb: var(--pine-dark);
+  --background-start-rgb: 50, 70, 50;
   --background-end-rgb: 0, 0, 0;
 }
 

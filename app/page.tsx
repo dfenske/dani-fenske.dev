@@ -32,7 +32,7 @@ export default function Home() {
         alt="Picture of me"
         width={300}
         height={300}
-        className="mx-auto"
+        className="mx-auto rounded-full border-4 dark:border-white border-transparent"
         blurDataURL="./Headshot-small.png"
         placeholder="blur"
         priority
