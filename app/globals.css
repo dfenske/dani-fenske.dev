@@ -9,6 +9,13 @@
 
 h1 {
   font-family: var(--font-bungee);
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 /* Animations */
