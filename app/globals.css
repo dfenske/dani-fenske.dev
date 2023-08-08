@@ -2,19 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Mobile first styles */
 * {
   font-family: var(--font-karla);
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
-}
-
 h1 {
   font-family: var(--font-bungee);
-  font-size: 4em;
 }
 
 /* Animations */

@@ -37,15 +37,15 @@ export default function Home() {
         placeholder="blur"
         priority
       />
-      <h1 className="text-center my-2 blinking-cursor">{heading}</h1>
-      <p
-        className={`mx-auto md:w-1/2 text-center transition-[opacity] duration-[1300ms] ease-in-out delay-500 ${
+      <h1 className="text-center my-2 blinking-cursor text-6xl">{heading}</h1>
+      <h2
+        className={`mx-auto mt-4 md:w-1/2 text-center transition-[opacity] duration-[1300ms] ease-in-out delay-500 text-xl ${
           paragraphShown ? "opacity-1" : "opacity-0"
         }`}
       >
         I am a full-stack software engineer in Seattle, WA, specializing in
         creating websites using React and TypeScript.
-      </p>
+      </h2>
     </>
   );
 }
