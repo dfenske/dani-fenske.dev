@@ -1,6 +1,6 @@
 "use client";
 import React, { createContext, useState, useContext, useEffect } from "react";
-import { karla, bungee } from "@/fonts";
+import { karla, bungee } from "@/styles/fonts";
 import clsx from "clsx";
 
 interface Theme {
@@ -66,16 +66,11 @@ export const ThemeProvider = (props: { children: React.ReactNode }) => {
   };
 
   return (
-    <html lang="en">
+    <html lang="en" className={`${bungee.variable} ${karla.variable}`}>
       <body
-        className={clsx(
-          karla.variable,
-          bungee.variable,
-          "flex flex-col min-h-screen",
-          {
-            ["hidden"]: !themeInitialized,
-          }
-        )}
+        className={clsx("flex flex-col min-h-screen", {
+          ["hidden"]: !themeInitialized,
+        })}
       >
         <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
       </body>

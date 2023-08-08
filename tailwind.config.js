@@ -1,33 +1,11 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  darkMode: "class",
-  theme: {
-    extend: {
-      colors: {
-        primary: "#ffffff",
-        secondary: "#eeeeee",
-        primaryDark: "#000000",
-        secondaryDark: "#111111",
-        primaryBg: "#000000",
-        secondaryBg: "#111111",
-        primaryDarkBg: "#ffffff",
-        secondaryDarkBg: "#eeeeee",
-
-        seaSalt: "rgb(248, 246, 246)",
-        sky: "rgb(203, 243, 240)",
-        ocean: "rgb(46, 196, 182)",
-        oceanDark: "rgb(0, 153, 142)",
-        pine: "rgb(27, 114, 106)",
-        pineDark: "rgb(14, 64, 59)",
-        creamsicle: "rgb(255, 191, 105)",
-        orangeJulius: "rgb(255, 159, 28)",
-      },
-    },
-  },
-  plugins: [],
+export const content = [
+  "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+  "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  "./app/**/*.{js,ts,jsx,tsx,mdx}",
+];
+export const darkMode = "class";
+export const theme = {
+  extend: {},
 };
+export const plugins = [];
