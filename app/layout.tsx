@@ -5,8 +5,8 @@ import { ThemeProvider } from "./theme-provider";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Dani Fenske's Portfolio",
-  description: "Dani Fenske's Portfolio",
+  title: "Dani Fenske | Portfolio",
+  description: "Dani Fenske | Portfolio",
 };
 
 export default function RootLayout({

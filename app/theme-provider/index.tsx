@@ -68,9 +68,12 @@ export const ThemeProvider = (props: { children: React.ReactNode }) => {
   return (
     <html lang="en" className={`${bungee.variable} ${karla.variable}`}>
       <body
-        className={clsx("flex flex-col min-h-screen", {
-          ["hidden"]: !themeInitialized,
-        })}
+        className={clsx(
+          "flex flex-col min-h-screen dark:bg-black dark:text-white",
+          {
+            ["hidden"]: !themeInitialized,
+          }
+        )}
       >
         <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
       </body>
