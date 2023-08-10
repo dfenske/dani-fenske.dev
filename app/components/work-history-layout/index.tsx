@@ -1,4 +1,8 @@
+"use client";
+
+import { Tooltip } from "react-tooltip";
 import Card from "../card";
+import { FiArrowLeftCircle } from "react-icons/fi";
 
 export default function WorkHistoryLayout(props: {
   title: string;
@@ -19,6 +23,17 @@ export default function WorkHistoryLayout(props: {
   return (
     <div className="flex flex-col sm:flex-row">
       <div className="flex-3 sm:mr-3">
+        <Tooltip id="back-arrow" className="tooltip" />
+        <a
+          href="/work-history"
+          data-tooltip-id="back-arrow"
+          data-tooltip-content="Back to Work History"
+          data-tooltip-place="right"
+        >
+          <FiArrowLeftCircle
+            style={{ display: "inline-block", fontSize: "2rem" }}
+          />
+        </a>
         <h1>{title}</h1>
         <h2>{subtitle}</h2>
         <h3>{description}</h3>
