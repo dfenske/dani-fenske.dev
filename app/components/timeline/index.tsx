@@ -27,7 +27,6 @@ export default function Timeline(props: { children: React.ReactNode[] }) {
     });
   }, [children]);
 
-  // TODO: Need to fix the pop-in of the timeline circles
   return (
     <div className="timeline">
       {children.map((child, i) => {
