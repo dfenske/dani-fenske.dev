@@ -2,8 +2,8 @@ export default function Avanade() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="150"
-      height="150"
+      width="100%"
+      height="auto"
       fill="none"
       viewBox="10 20 50 50"
     >
@@ -34,17 +34,17 @@ export default function Avanade() {
           y2="34.603"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".2" stop-color="#ff5800"></stop>
-          <stop offset=".24" stop-color="#ff7000"></stop>
-          <stop offset=".32" stop-color="#ff9500"></stop>
-          <stop offset=".4" stop-color="#ffb200"></stop>
-          <stop offset=".47" stop-color="#ffc600"></stop>
-          <stop offset=".55" stop-color="#ffd300"></stop>
-          <stop offset=".62" stop-color="gold"></stop>
-          <stop offset=".66" stop-color="#ffce00"></stop>
-          <stop offset=".72" stop-color="#ffb600"></stop>
-          <stop offset=".81" stop-color="#ff8e00"></stop>
-          <stop offset=".9" stop-color="#ff5800"></stop>
+          <stop offset=".2" stopColor="#ff5800"></stop>
+          <stop offset=".24" stopColor="#ff7000"></stop>
+          <stop offset=".32" stopColor="#ff9500"></stop>
+          <stop offset=".4" stopColor="#ffb200"></stop>
+          <stop offset=".47" stopColor="#ffc600"></stop>
+          <stop offset=".55" stopColor="#ffd300"></stop>
+          <stop offset=".62" stopColor="gold"></stop>
+          <stop offset=".66" stopColor="#ffce00"></stop>
+          <stop offset=".72" stopColor="#ffb600"></stop>
+          <stop offset=".81" stopColor="#ff8e00"></stop>
+          <stop offset=".9" stopColor="#ff5800"></stop>
         </linearGradient>
         <linearGradient
           id="B"
@@ -54,15 +54,15 @@ export default function Avanade() {
           y2="48.12"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".09" stop-color="#ff5800"></stop>
-          <stop offset=".19" stop-color="#ff7907"></stop>
-          <stop offset=".31" stop-color="#ff990e"></stop>
-          <stop offset=".4" stop-color="#ffad12"></stop>
-          <stop offset=".47" stop-color="#ffb414"></stop>
-          <stop offset=".53" stop-color="#ffad12"></stop>
-          <stop offset=".62" stop-color="#ff980e"></stop>
-          <stop offset=".73" stop-color="#ff7707"></stop>
-          <stop offset=".82" stop-color="#ff5800"></stop>
+          <stop offset=".09" stopColor="#ff5800"></stop>
+          <stop offset=".19" stopColor="#ff7907"></stop>
+          <stop offset=".31" stopColor="#ff990e"></stop>
+          <stop offset=".4" stopColor="#ffad12"></stop>
+          <stop offset=".47" stopColor="#ffb414"></stop>
+          <stop offset=".53" stopColor="#ffad12"></stop>
+          <stop offset=".62" stopColor="#ff980e"></stop>
+          <stop offset=".73" stopColor="#ff7707"></stop>
+          <stop offset=".82" stopColor="#ff5800"></stop>
         </linearGradient>
         <linearGradient
           id="C"
@@ -72,15 +72,15 @@ export default function Avanade() {
           y2="50.859"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset=".5" stop-color="#ff5800"></stop>
-          <stop offset=".64" stop-color="#ce056a" stop-opacity=".99"></stop>
-          <stop offset=".76" stop-color="#cf0768" stop-opacity=".99"></stop>
-          <stop offset=".81" stop-color="#d20d60" stop-opacity=".99"></stop>
-          <stop offset=".85" stop-color="#d81753" stop-opacity=".99"></stop>
-          <stop offset=".88" stop-color="#e12541" stop-opacity=".99"></stop>
-          <stop offset=".91" stop-color="#ec3829"></stop>
-          <stop offset=".94" stop-color="#f94e0c"></stop>
-          <stop offset=".95" stop-color="#ff5800"></stop>
+          <stop offset=".5" stopColor="#ff5800"></stop>
+          <stop offset=".64" stopColor="#ce056a" stopOpacity=".99"></stop>
+          <stop offset=".76" stopColor="#cf0768" stopOpacity=".99"></stop>
+          <stop offset=".81" stopColor="#d20d60" stopOpacity=".99"></stop>
+          <stop offset=".85" stopColor="#d81753" stopOpacity=".99"></stop>
+          <stop offset=".88" stopColor="#e12541" stopOpacity=".99"></stop>
+          <stop offset=".91" stopColor="#ec3829"></stop>
+          <stop offset=".94" stopColor="#f94e0c"></stop>
+          <stop offset=".95" stopColor="#ff5800"></stop>
         </linearGradient>
         <linearGradient
           id="D"
@@ -90,14 +90,14 @@ export default function Avanade() {
           y2="52.014"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#ff5800"></stop>
-          <stop offset=".06" stop-color="#fc5400"></stop>
-          <stop offset=".13" stop-color="#f54700"></stop>
-          <stop offset=".19" stop-color="#e83300"></stop>
-          <stop offset=".26" stop-color="#d61600"></stop>
-          <stop offset=".3" stop-color="#c80000"></stop>
-          <stop offset=".48" stop-color="#c80000"></stop>
-          <stop offset=".91" stop-color="#ff5800"></stop>
+          <stop stopColor="#ff5800"></stop>
+          <stop offset=".06" stopColor="#fc5400"></stop>
+          <stop offset=".13" stopColor="#f54700"></stop>
+          <stop offset=".19" stopColor="#e83300"></stop>
+          <stop offset=".26" stopColor="#d61600"></stop>
+          <stop offset=".3" stopColor="#c80000"></stop>
+          <stop offset=".48" stopColor="#c80000"></stop>
+          <stop offset=".91" stopColor="#ff5800"></stop>
         </linearGradient>
         <clipPath id="E">
           <path fill="#fff" d="M0 0h194v100H0z"></path>
