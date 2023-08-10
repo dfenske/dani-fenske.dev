@@ -11,8 +11,8 @@ export default function Timeline(props: { children: React.ReactNode[] }) {
 
   // Reveal each child after a delay
   useEffect(() => {
-    const delay = 1000;
-    let timeout = 1000;
+    const delay = 500;
+    let timeout = 500;
 
     children.forEach((_, index) => {
       setTimeout(() => {

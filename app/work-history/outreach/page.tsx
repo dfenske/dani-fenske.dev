@@ -1,10 +1,12 @@
 import WorkHistoryLayout from "@/app/components/work-history-layout";
+import OutreachLogo from "@/app/components/logos/outreach-logo";
 
 export default function Outreach() {
   return (
     <WorkHistoryLayout
       title="Outreach"
       subtitle="Staff Software Engineer | Aug. 2021 - Present"
+      logo={<OutreachLogo />}
       description="At Outreach, I began as a frontend engineer and eventually moved
       over to the backend to assist a team in need of more engineers."
       projectContent={

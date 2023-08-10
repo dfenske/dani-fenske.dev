@@ -16,7 +16,7 @@ export default function HeaderItem(props: {
         href={href}
         data-tooltip-content={text}
         data-tooltip-place="bottom"
-        className="mx-2"
+        className="mx-2 text-slate-900"
       >
         {icon}
       </a>

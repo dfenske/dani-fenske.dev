@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <ThemeProvider>
       <Header />
-      <div className="mx-4 p-4 flex-1 flex flex-col">{children}</div>
+      <div className="px-8 py-4 flex-1 flex flex-col">{children}</div>
       <Footer />
     </ThemeProvider>
   );

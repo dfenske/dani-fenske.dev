@@ -69,7 +69,7 @@ export const ThemeProvider = (props: { children: React.ReactNode }) => {
     <html lang="en" className={`${bungee.variable} ${karla.variable}`}>
       <body
         className={clsx(
-          "flex flex-col min-h-screen dark:bg-black dark:text-white",
+          "app flex flex-col min-h-screen dark:bg-black dark:text-white",
           {
             ["hidden"]: !themeInitialized,
           }

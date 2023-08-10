@@ -35,6 +35,10 @@ h4 {
   }
 }
 
+a {
+  @apply text-blue-500;
+}
+
 a:hover {
   @apply text-blue-700;
 }
@@ -63,18 +67,13 @@ a:hover {
   }
 }
 
-/* Apply the animation to the ::after element */
-.timeline::after {
-  animation: fade-in-top-to-bottom 2s ease-in-out forwards; /* Adjust the animation duration as needed */
-}
-
 .callout {
   @apply font-bold;
   @apply text-blue-400;
 }
 
 /* react-tooltip requires two levels of specificity to override styles */
-.header .tooltip {
+.app .tooltip {
   font-size: 0.8rem;
   opacity: 1;
   padding: 0 0.75rem;
@@ -95,9 +94,11 @@ a:hover {
   width: 6px;
   background-color: black;
   top: 0;
+  @apply rounded-full;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
+  animation: fade-in-top-to-bottom 2s ease-in-out forwards; /* Adjust the animation duration as needed */
 }
 
 .dark .timeline::after {
