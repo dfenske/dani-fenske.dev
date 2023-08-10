@@ -39,7 +39,7 @@ export default function Home() {
       />
       <h1 className="text-center my-2 blinking-cursor">{heading}</h1>
       <h2
-        className={`mx-auto mt-4 md:w-1/2 text-center transition-[opacity] duration-[1300ms] ease-in-out delay-500${
+        className={`mx-auto mt-4 md:w-1/2 text-center transition-[opacity] duration-[1300ms] ease-in-out delay-500 ${
           paragraphShown ? "opacity-1" : "opacity-0"
         }`}
       >
