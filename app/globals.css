@@ -43,6 +43,14 @@ a:hover {
   @apply text-blue-700;
 }
 
+.dark a {
+  @apply text-blue-100;
+}
+
+.dark a:hover {
+  @apply text-blue-300;
+}
+
 /* Animations */
 .blinking-cursor:after {
   content: "|";
@@ -187,20 +195,29 @@ a:hover {
   border-radius: 8px;
   border: 4px solid black;
   transition: background 0.2s ease-in-out;
+  @apply text-black;
+}
+
+.content a {
+  @apply text-black;
 }
 
 .content:hover {
   @apply shadow-xl;
-  @apply bg-slate-100;
+  @apply bg-stone-100;
 }
 
 .dark .content {
   border-color: white;
 }
 
+.dark .content a {
+  @apply text-white;
+}
+
 .dark .content:hover {
   @apply shadow-slate-700;
-  @apply bg-slate-900;
+  @apply bg-stone-900;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */

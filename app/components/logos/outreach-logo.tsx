@@ -4,7 +4,7 @@ export default function Outreach() {
       xmlns="http://www.w3.org/2000/svg"
       width="100%"
       height="auto"
-      viewBox="135 -5 80 120"
+      viewBox="115 -5 120 120"
     >
       <g transform="translate(-548 -1417)">
         <path

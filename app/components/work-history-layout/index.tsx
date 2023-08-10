@@ -23,7 +23,7 @@ export default function WorkHistoryLayout(props: {
     logo,
   } = props;
   return (
-    <div className="flex flex-col sm:flex-row">
+    <div className="flex-1 flex flex-col sm:flex-row">
       <div className="flex-3 sm:mr-3">
         <h1 className="flex align-center">
           <Tooltip
