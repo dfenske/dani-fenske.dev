@@ -23,7 +23,7 @@ export default function WorkHistoryLayout(props: {
   return (
     <div className="flex flex-col sm:flex-row">
       <div className="flex-3 sm:mr-3">
-        <Tooltip id="back-arrow" className="tooltip" />
+        <Tooltip id="back-arrow" className="tooltip hidden sm:block" />
         <a
           href="/work-history"
           data-tooltip-id="back-arrow"
