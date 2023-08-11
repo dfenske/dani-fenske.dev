@@ -23,10 +23,17 @@ export default function AboutMe() {
             <li>
               I like to change my hair color often, as seen by the difference
               between my{" "}
-              <a href="https://www.linkedin.com/in/daniellefenske/">
+              <a
+                aria-label="LinkedIn page"
+                href="https://www.linkedin.com/in/daniellefenske/"
+              >
                 LinkedIn photo
               </a>{" "}
-              and my <a href="https://github.com/dfenske">Github photo</a>.
+              and my{" "}
+              <a aria-label="Github page" href="https://github.com/dfenske">
+                Github photo
+              </a>
+              .
             </li>
             <li>I was born and raised in Seattle.</li>
             <li>

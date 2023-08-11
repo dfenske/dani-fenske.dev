@@ -33,6 +33,7 @@ export default function WorkHistoryLayout(props: {
             data-tooltip-content="Work History"
             data-tooltip-place="top"
             className="flex items-center mr-3"
+            aria-label="Work History"
           >
             <FiArrowLeftCircle
               style={{ display: "inline-block", fontSize: "2rem" }}

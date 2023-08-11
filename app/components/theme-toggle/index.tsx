@@ -10,6 +10,7 @@ export default function ThemeToggle() {
     <div className="flex items-center">
       <Tooltip id="use-os" className="tooltip hidden sm:block mt-1" />
       <button
+        aria-label="Use OS setting"
         data-tooltip-id="use-os"
         data-tooltip-content="Use OS setting"
         data-tooltip-place="top"
@@ -32,6 +33,7 @@ export default function ThemeToggle() {
             checked={isDarkMode}
             className="sr-only peer"
             onChange={toggleTheme}
+            aria-label="Toggle theme"
           />
           <div className="w-11 h-6 bg-amber-300 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-amber-100 dark:peer-focus:ring-blue-800 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600" />
           <span className="ml-[-1.15rem] text-sm font-medium text-amber-300 dark:text-blue-900 z-50">

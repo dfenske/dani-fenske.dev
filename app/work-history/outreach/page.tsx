@@ -22,7 +22,11 @@ export default function Outreach() {
           <p>
             The frontend was built using <span className="callout">React</span>{" "}
             and <span className="callout">TypeScript</span>, and we built our
-            design system on top of <a href="https://mui.com/">Material UI</a>.
+            design system on top of{" "}
+            <a aria-label="MaterialUI" href="https://mui.com/">
+              Material UI
+            </a>
+            .
           </p>
           <p>
             Our customers were primarily other developers at Outreach, but we

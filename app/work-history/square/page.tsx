@@ -10,7 +10,11 @@ export default function Square() {
       description={
         <>
           At Square, (now known as Block), I worked on the{" "}
-          <a target="_blank" href="https://squareup.com/us/en/appointments">
+          <a
+            aria-label="Square Appointments"
+            target="_blank"
+            href="https://squareup.com/us/en/appointments"
+          >
             Appointments
           </a>{" "}
           team which was a fully-remote team of Ember and Ruby developers. We
@@ -37,6 +41,7 @@ export default function Square() {
             standardize upon. I did this in two days, which may sound like a lot
             for adding a linter. But the{" "}
             <a
+              aria-label="Handlebars linter"
               target="_blank"
               href="https://github.com/ember-template-lint/ember-template-lint#rules"
             >

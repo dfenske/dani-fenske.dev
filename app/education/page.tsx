@@ -20,7 +20,10 @@ export default function Education() {
         College, acting as inter-collegiate connection. Our research studied
         programming languages including Haskell, Python, JavaScript&apos;s
         parallel API RiverTrail, and CUDASkills. Here is the{" "}
-        <a href="https://www.linkedin.com/in/daniellefenske/details/experience/405172858/multiple-media-viewer/?profileId=ACoAAA1rpJoB7CncuO4f_lzH4naFY9d7xa7sJtk&treasuryMediaId=50018490&type=DOCUMENT&locale=fr_FR">
+        <a
+          aria-label="poster"
+          href="https://www.linkedin.com/in/daniellefenske/details/experience/405172858/multiple-media-viewer/?profileId=ACoAAA1rpJoB7CncuO4f_lzH4naFY9d7xa7sJtk&treasuryMediaId=50018490&type=DOCUMENT&locale=fr_FR"
+        >
           poster
         </a>{" "}
         we created based on our research.
@@ -29,9 +32,15 @@ export default function Education() {
       <p className="mb-4">
         As for my French major, I studied abroad in Nancy, France for four
         months. I am conversant in French thanks to living with a wonderful host
-        mom, studying at an <a href="https://ensad-nancy.eu/">art school</a>,
-        and apprenticing in a{" "}
-        <a href="https://www.patisserie-saintepvre.fr/photos#Saint-Epvre">
+        mom, studying at an{" "}
+        <a aria-label="ENSA website" href="https://ensad-nancy.eu/">
+          art school
+        </a>
+        , and apprenticing in a{" "}
+        <a
+          aria-label="patisserie website"
+          href="https://www.patisserie-saintepvre.fr/photos#Saint-Epvre"
+        >
           French patisserie
         </a>
         .

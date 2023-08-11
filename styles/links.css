@@ -1,6 +1,6 @@
 /* Added the .app prefix because Tailwind overrides these styles, and the import of this file must come before the tailwind directive. */
 .app a {
-  @apply text-blue-500;
+  @apply text-blue-600;
 }
 
 .app a:hover {
@@ -8,11 +8,12 @@
 }
 
 .dark .app a {
-  @apply text-blue-200;
+  @apply text-blue-300;
+  @apply underline;
 }
 
 .dark .app a:hover {
-  @apply text-blue-400;
+  @apply text-blue-600;
 }
 
 .header a {

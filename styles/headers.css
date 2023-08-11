@@ -1,7 +1,8 @@
 /* Added the .app prefix because Tailwind overrides these styles, and the import of this file must come before the tailwind directive. */
 .callout {
   @apply font-bold;
-  @apply text-emerald-500;
+  @apply italic;
+  @apply text-emerald-800;
 }
 
 .app h1 {

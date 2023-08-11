@@ -19,6 +19,7 @@ export default function HeaderItem(props: {
         data-tooltip-content={text}
         data-tooltip-place="bottom"
         className="mx-2"
+        aria-label={`${text}`}
       >
         {icon}
       </a>

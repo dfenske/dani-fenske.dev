@@ -33,8 +33,12 @@ export default function PayScale() {
             worked on. PayScale is where I really got my start as a frontend
             developer and I had great mentors. We participated very regularly in
             vibrant Hack Weeks, which inspired a lot of exploration, even into
-            areas like <a href="https://www.payscale.com/404">animation</a>. The
-            engineering team was small so I got to dip my toes into many areas -{" "}
+            areas like{" "}
+            <a aria-label="PayScale 404" href="https://www.payscale.com/404">
+              animation
+            </a>
+            . The engineering team was small so I got to dip my toes into many
+            areas -{" "}
             <span className="callout">
               backend, frontend, data, CI/CD, design system, APIs, AB testing,
               Azure, networking
@@ -46,12 +50,21 @@ export default function PayScale() {
             time on things like:
             <ul className="list-disc ml-4">
               <li>
-                The <a href="https://www.payscale.com/survey/">salary survey</a>
+                The{" "}
+                <a
+                  aria-label="PayScale Survey"
+                  href="https://www.payscale.com/survey/"
+                >
+                  salary survey
+                </a>
                 , which was powered by React and Redux
               </li>
               <li>
                 The{" "}
-                <a href="https://www.payscale.com/mypayscale.aspx">
+                <a
+                  aria-label="PayScale report"
+                  href="https://www.payscale.com/mypayscale.aspx"
+                >
                   MyPayscale page
                 </a>{" "}
                 (the survey results page), which we rewrote in NextJS

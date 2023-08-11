@@ -19,5 +19,11 @@ export default function Card(props: {
       {children}
     </div>
   );
-  return href ? <a href={href}>{content}</a> : <>{content}</>;
+  return href ? (
+    <a aria-label={`${header}`} href={href}>
+      {content}
+    </a>
+  ) : (
+    <>{content}</>
+  );
 }
