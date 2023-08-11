@@ -31,7 +31,7 @@ body {
 
 /* react-tooltip requires two levels of specificity to override styles */
 .app .tooltip {
-  font-size: 0.8rem;
-  opacity: 1;
-  padding: 0 0.75rem;
+  font-size: 1rem;
+  padding: 6px 12px;
+  font-family: var(--font-karla);
 }
