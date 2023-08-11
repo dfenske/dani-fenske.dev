@@ -1,4 +1,5 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element -- The Image component doesn't do great with external URLs. */
+
 import Card from "../components/card";
 
 export default function BlogPosts() {
@@ -10,7 +11,7 @@ export default function BlogPosts() {
         on the job. I&apos;ve included them here for your reading pleasure.
       </h2>
 
-      <div className="grid grid-cols-3 grid-rows-2 gap-4">
+      <div className="grid grid:cols-1 gap-4 sm:grid-cols-3 sm:grid-rows-2 sm:gap-4">
         <Card
           className="border-[1px] rounded border-black px-3 pb-4 hover:shadow-lg"
           header="PagerDuty + Slack + Azure Integration"
