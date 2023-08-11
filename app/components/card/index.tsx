@@ -14,8 +14,8 @@ export default function Card(props: {
       <div className="text-xl min-h-[56px] border-b-[1px] border-oceanDark py-3">
         {header}
       </div>
-      {subheader && <div className="mt-1 pt-4">{subheader}</div>}
-      {img && <div className="m-5 flex justify-center h-[100px]">{img}</div>}
+      {subheader && <div className="mt-1 py-2">{subheader}</div>}
+      {img && <div className="mx-2 flex justify-center">{img}</div>}
       {children}
     </div>
   );

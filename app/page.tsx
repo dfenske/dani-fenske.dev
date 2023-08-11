@@ -45,6 +45,10 @@ export default function Home() {
       >
         I am a full-stack software engineer in Seattle, WA, specializing in
         creating websites using React and TypeScript.
+        <br />
+        <br />I will join your team and ramp up fast, document everything I
+        learn, and contribute in meaningful ways not only to the code base, but
+        to the team culture as well.
       </h2>
     </>
   );
