@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutMe() {
   return (
     <>
-      <div className="flex items-start flex-col-reverse sm:flex-row">
+      <div className="flex items-start flex-col-reverse sm:flex-row items-center">
         <div className="flex-1">
           <h1>About Me</h1>
           <h2>Observations from peers and friends</h2>
