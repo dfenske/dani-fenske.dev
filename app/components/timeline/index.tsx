@@ -28,20 +28,22 @@ export default function Timeline(props: { children: React.ReactNode[] }) {
   }, [children]);
 
   return (
-    <div className="timeline">
-      {children.map((child, i) => {
-        return (
-          <div
-            key={i}
-            className={`timeline-container transition-opacity duration-500 ease-in-out 
+    <div>
+      <div className="timeline">
+        {children.map((child, i) => {
+          return (
+            <div
+              key={i}
+              className={`timeline-container transition-opacity duration-500 ease-in-out 
             ${i % 2 === 0 ? "left" : "right"} ${
-              visibleArr[i] ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <div className="content">{child}</div>
-          </div>
-        );
-      })}
+                visibleArr[i] ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <div className="content">{child}</div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
