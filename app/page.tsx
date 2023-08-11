@@ -32,10 +32,7 @@ export default function Home() {
         alt="Picture of me"
         width={300}
         height={300}
-        className="mx-auto rounded-full border-4 dark:border-white border-transparent"
-        blurDataURL="./Headshot-small.png"
-        placeholder="blur"
-        priority
+        className="image-loading mx-auto rounded-full  dark:border-white border-transparent bg-gradient-to-r from-[#35637E] to-[#273A49]"
       />
       <h1 className="text-center my-2 blinking-cursor">{heading}</h1>
       <h2

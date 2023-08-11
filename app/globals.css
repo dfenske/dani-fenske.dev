@@ -14,6 +14,28 @@ body {
   font-family: var(--font-karla);
 }
 
+.image-loading {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-loading::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  animation: shimmer 1.5s infinite;
+  content: "";
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    transparent 100%
+  );
+}
+
 /* react-tooltip requires two levels of specificity to override styles */
 .app .tooltip {
   font-size: 0.8rem;
