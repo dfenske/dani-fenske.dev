@@ -28,7 +28,7 @@ export default function Footer() {
         <a href="https://developer.chrome.com/docs/lighthouse/overview/">
           Lighthouse
         </a>
-        .
+        . &copy; 2023
       </div>
     </footer>
   );
