@@ -9,6 +9,7 @@ export default function Home() {
   const message = `${handWavingEmoji} Hi, my name is Dani Fenske.`;
   const [heading, setHeading] = useState("");
   const [paragraphShown, setParagraphShown] = useState(false);
+  const [imageVisible, setImageVisible] = useState(false);
 
   useEffect(() => {
     if (message !== heading) {
@@ -27,13 +28,17 @@ export default function Home() {
 
   return (
     <>
-      <Image
-        src={profilePic}
-        alt="Picture of me"
-        width={300}
-        height={300}
-        className="image-loading mx-auto rounded-full  dark:border-white border-transparent bg-gradient-to-r from-[#35637E] to-[#273A49]"
-      />
+      <div className="image-container w-[300px] h-[300px] self-center">
+        {!imageVisible && <div className="shimmering-skeleton" />}
+        <Image
+          src={profilePic}
+          alt="Picture of me"
+          width={300}
+          height={300}
+          className="image mx-auto rounded-full  dark:border-white border-transparent"
+          onLoad={() => setImageVisible(true)}
+        />
+      </div>
       <h1 className="text-center my-2 blinking-cursor">{heading}</h1>
       <h2
         className={`mx-auto mt-4 md:w-1/2 text-center transition-[opacity] duration-[1300ms] ease-in-out delay-500 ${
