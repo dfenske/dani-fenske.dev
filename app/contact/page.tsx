@@ -17,13 +17,13 @@ export default function Contact() {
       <h2>
         <a target="_blank" href="https://www.linkedin.com/in/daniellefenske/">
           <FiGithub className="mx-2 inline" />
-          https://www.linkedin.com/in/daniellefenske/
+          LinkedIn
         </a>
       </h2>
       <h2>
         <a target="_blank" href="https://github.com/dfenske">
           <FiLinkedin className="mx-2 inline" />
-          https://github.com/dfenske
+          Github
         </a>
       </h2>
     </>

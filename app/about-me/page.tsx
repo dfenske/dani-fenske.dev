@@ -3,19 +3,21 @@ import Image from "next/image";
 export default function AboutMe() {
   return (
     <>
-      <div className="flex items-start">
+      <div className="flex items-start flex-col-reverse sm:flex-row">
         <div className="flex-1">
           <h1>About Me</h1>
           <h2>Observations from peers and friends</h2>
-          <ul className="list-disc ml-4">
-            <li>“Expert-level organization”</li>
+          <div className="bg-blue-100 dark:bg-blue-900 p-3 rounded">
+            <ul className="list-disc ml-4">
+              <li>“Expert-level organization”</li>
 
-            <li>“Extreme note taker”</li>
+              <li>“Extreme note taker”</li>
 
-            <li>“Master of all tools big and small”</li>
+              <li>“Master of all tools big and small”</li>
 
-            <li>“Solar-powered”</li>
-          </ul>
+              <li>“Solar-powered”</li>
+            </ul>
+          </div>
           <h2>Fun facts</h2>
           <ul className="list-disc ml-4">
             <li>
@@ -52,7 +54,7 @@ export default function AboutMe() {
           width={0}
           height={0}
           sizes="100vw"
-          className="ml-3 h-auto flex-[2] rounded-lg"
+          className="w-full sm:w-0 sm:ml-6 h-auto flex-[2] rounded-lg"
         />
       </div>
     </>
