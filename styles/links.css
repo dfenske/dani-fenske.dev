@@ -1,15 +1,24 @@
-a {
+/* Added the .app prefix because Tailwind overrides these styles, and the import of this file must come before the tailwind directive. */
+.app a {
   @apply text-blue-500;
 }
 
-a:hover {
+.app a:hover {
   @apply text-blue-700;
 }
 
-.dark a {
-  @apply text-blue-100;
+.dark .app a {
+  @apply text-blue-200;
 }
 
-.dark a:hover {
-  @apply text-blue-300;
+.dark .app a:hover {
+  @apply text-blue-400;
+}
+
+.header a {
+  @apply text-slate-900;
+}
+
+.dark .header a {
+  @apply text-white;
 }

@@ -29,6 +29,25 @@ body {
   @apply bg-gradient-to-r from-transparent via-[#273A49] to-transparent;
 }
 
+.quote {
+  @apply bg-slate-100;
+  @apply p-4;
+  @apply rounded-lg;
+  @apply text-slate-900;
+  @apply text-lg;
+  @apply font-bold;
+  @apply italic;
+  @apply border-2;
+  @apply border-slate-200;
+  @apply shadow-md;
+  @apply my-4;
+}
+
+.dark .quote {
+  @apply bg-slate-800;
+  @apply text-slate-100;
+}
+
 /* react-tooltip requires two levels of specificity to override styles */
 .app .tooltip {
   font-size: 1rem;

@@ -28,6 +28,10 @@ export default function Outreach() {
             Our customers were primarily other developers at Outreach, but we
             also owned some core application experiences.
           </p>
+          <div className="quote">
+            &quot;Dani&apos;s mastery of all tools big and small is
+            noticeable.&quot;
+          </div>
           <h4>Monolith Service Decomposition</h4>
           <p>
             After a year and a half, I was loaned to a backend team to help with
