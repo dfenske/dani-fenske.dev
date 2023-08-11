@@ -6,6 +6,8 @@ import clsx from "clsx";
 interface Theme {
   toggleTheme: () => void;
   isDarkMode: boolean;
+  toggleUseOSPref: () => void;
+  usingOSPref: boolean;
 }
 
 // Create a context to store the theme state
@@ -27,6 +29,7 @@ export const ThemeProvider = (props: { children: React.ReactNode }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   // State to track whether the theme has been initialized
   const [themeInitialized, setThemeInitialized] = useState(false);
+  const [usingOSPref, setUsingOSPref] = useState(true);
 
   useEffect(() => {
     // Use the user's OS theme preference if they haven't explicitly set a preference
@@ -57,12 +60,25 @@ export const ThemeProvider = (props: { children: React.ReactNode }) => {
   // Toggle the theme between dark and light mode
   const toggleTheme = () => {
     setIsDarkMode((prev) => !prev);
+    setUsingOSPref(false);
+  };
+
+  // Respect OS preference
+  const toggleUseOSPref = () => {
+    if (usingOSPref) {
+      setUsingOSPref(false);
+    } else if (typeof window !== "undefined") {
+      setIsDarkMode(window.matchMedia("(prefers-color-scheme: dark)").matches);
+      setUsingOSPref(true);
+    }
   };
 
   // Define the theme object with the required colors for dark and light modes
   const theme: Theme = {
     toggleTheme,
     isDarkMode,
+    toggleUseOSPref,
+    usingOSPref,
   };
 
   return (
