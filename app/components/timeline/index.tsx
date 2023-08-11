@@ -33,7 +33,7 @@ export default function Timeline(props: { children: React.ReactNode[] }) {
         return (
           <div
             key={i}
-            className={`container transition-opacity duration-500 ease-in-out 
+            className={`timeline-container transition-opacity duration-500 ease-in-out 
             ${i % 2 === 0 ? "left" : "right"} ${
               visibleArr[i] ? "opacity-100" : "opacity-0"
             }`}
