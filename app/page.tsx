@@ -37,6 +37,7 @@ export default function Home() {
           height={300}
           className="image mx-auto rounded-full  dark:border-white border-transparent"
           onLoad={() => setImageVisible(true)}
+          priority
         />
       </div>
       <h1 className="text-center my-2 blinking-cursor">{heading}</h1>

@@ -24,7 +24,11 @@ export default function Footer() {
         <a href="https://www.deque.com/axe-devtools-accessibility-testing/">
           axe DevTools
         </a>{" "}
-        and <a href="">Lighthouse</a>.
+        and{" "}
+        <a href="https://developer.chrome.com/docs/lighthouse/overview/">
+          Lighthouse
+        </a>
+        .
       </div>
     </footer>
   );
