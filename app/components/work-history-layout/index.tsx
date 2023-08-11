@@ -26,15 +26,12 @@ export default function WorkHistoryLayout(props: {
     <div className="flex-1 flex flex-col sm:flex-row">
       <div className="flex-3 sm:mr-3">
         <h1 className="flex align-center">
-          <Tooltip
-            id="back-arrow"
-            className="tooltip hidden sm:block text-small"
-          />
+          <Tooltip id="back-arrow" className="tooltip hidden sm:block mt-1" />
           <a
             href="/work-history"
             data-tooltip-id="back-arrow"
-            data-tooltip-content="Back to Work History"
-            data-tooltip-place="right"
+            data-tooltip-content="Work History"
+            data-tooltip-place="top"
             className="flex items-center mr-3"
           >
             <FiArrowLeftCircle
