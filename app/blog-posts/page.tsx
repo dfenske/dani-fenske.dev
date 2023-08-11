@@ -17,7 +17,7 @@ export default function BlogPosts() {
           subheader="Feb 2020"
           href="https://medium.com/payscale-tech/pagerduty-slack-azure-integration-2444d668c4fa"
           img={
-            <Image
+            <img
               src="https://miro.medium.com/v2/resize:fit:1400/0*gWPfYJcOwKwMh9BV"
               alt="Blog image of a terrarium"
               width="0"
@@ -34,7 +34,7 @@ export default function BlogPosts() {
           subheader="Sep 2019"
           href="https://medium.com/payscale-tech/network-timeouts-and-cpu-limitations-in-azure-kubernetes-service-178789ebe41"
           img={
-            <Image
+            <img
               src="https://miro.medium.com/v2/resize:fit:1400/0*0gZBK45R6CcI-6IZ"
               alt="Blog image of a sand timer"
               width="0"
@@ -51,7 +51,7 @@ export default function BlogPosts() {
           subheader="Aug 2019"
           href="https://medium.com/payscale-tech/load-testing-your-website-by-replaying-cloudfront-logs-eb81cbaf27ea"
           img={
-            <Image
+            <img
               src="https://miro.medium.com/v2/resize:fit:1400/0*_KXJnDUH3LoaSz-j"
               alt="Blog image of a backpack"
               width="0"
@@ -68,7 +68,7 @@ export default function BlogPosts() {
           subheader="July 2019"
           href="https://medium.com/payscale-tech/introduction-to-react-hooks-29ef97547862"
           img={
-            <Image
+            <img
               src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*z0IR0e4YRL7km2tngBe8eg.jpeg"
               alt="Blog image of a fishing pole"
               width="0"
@@ -85,7 +85,7 @@ export default function BlogPosts() {
           subheader="Apr 2019"
           href="https://medium.com/payscale-tech/react-prerendering-next-js-docker-azure-b3236f8ec80e"
         >
-          <Image
+          <img
             src="https://miro.medium.com/v2/resize:fit:1400/1*HyZjZ3p-7Cwc0hKesqcWAQ.jpeg"
             alt="Blog image of a shipping container"
             width="0"
