@@ -1,7 +1,7 @@
-/* Added the .app prefix because Tailwind overrides these styles, and the import of this file must come before the tailwind directive. */
+/* Added the .app prefix because imports must come before the tailwind 
+directive, and Tailwind overrides these styles. */
 .callout {
   @apply font-bold;
-  /* @apply italic; */
   @apply text-emerald-700;
 }
 

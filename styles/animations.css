@@ -1,8 +1,8 @@
-/* Animations */
+/* Cursor animation for home page */
 .blinking-cursor:after {
   content: "|";
-  @apply text-slate-300;
   animation: blink 1s step-start infinite;
+  @apply text-slate-300;
 }
 
 @keyframes blink {
@@ -11,6 +11,7 @@
   }
 }
 
+/* Timeline animation */
 @keyframes fade-in-top-to-bottom {
   0% {
     height: 0;
@@ -22,6 +23,7 @@
   }
 }
 
+/* Image loading animation */
 @keyframes shimmer {
   0% {
     transform: translateX(-100%);

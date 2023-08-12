@@ -1,4 +1,5 @@
-/* Added the .app prefix because Tailwind overrides these styles, and the import of this file must come before the tailwind directive. */
+/* Added the .app prefix because imports must come before the tailwind 
+directive, and Tailwind overrides these styles. */
 .app a {
   @apply text-blue-600;
 }
@@ -7,6 +8,8 @@
   @apply text-blue-700;
 }
 
+/* I wanted to avoid underlining links, but I couldn't find a good color 
+combination that made aXe dev tools happy in dark mode. */
 .dark .app a {
   @apply text-white;
   @apply underline;

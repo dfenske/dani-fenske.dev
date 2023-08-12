@@ -9,7 +9,7 @@ export default function Square() {
       logo={<SquareLogo />}
       description={
         <>
-          At Square, (now known as Block), I worked on the{" "}
+          At Square, I worked on the{" "}
           <a
             aria-label="Square Appointments"
             target="_blank"
