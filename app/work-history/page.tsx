@@ -8,7 +8,7 @@ import Timeline from "../components/timeline";
 export default function WorkHistory() {
   return (
     <>
-      <h1>Work History</h1>
+      <h1 className="self-center">Work History</h1>
       <Timeline>
         <>
           <div className="timeline-date">Aug. 2021 - Present</div>

@@ -1,6 +1,6 @@
 export default function Education() {
   return (
-    <div className="max-w-[1000px]">
+    <div className="page">
       <h1>Education</h1>
       <h2>Bachelors of Arts from Lewis and Clark College</h2>
       <h3>Portland, OR</h3>

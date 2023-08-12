@@ -27,7 +27,7 @@ export default function Home() {
   }, [heading, message]);
 
   return (
-    <>
+    <div className="page flex flex-col">
       <div className="image-container w-[300px] h-[300px] self-center">
         {!imageVisible && <div className="shimmering-skeleton" />}
         <Image
@@ -35,14 +35,14 @@ export default function Home() {
           alt="Picture of me"
           width={300}
           height={300}
-          className="image mx-auto rounded-full  dark:border-white border-transparent"
+          className="image rounded-full dark:border-white border-transparent"
           onLoad={() => setImageVisible(true)}
           priority
         />
       </div>
       <h1 className="text-center my-2 blinking-cursor">{heading}</h1>
       <h2
-        className={`mx-auto mt-4 sm:max-w-[800px] text-center transition-[opacity] duration-[1300ms] ease-in-out delay-500 ${
+        className={`mt-4 text-center transition-[opacity] duration-[1300ms] ease-in-out delay-500 ${
           paragraphShown ? "opacity-1" : "opacity-0"
         }`}
       >
@@ -53,6 +53,6 @@ export default function Home() {
         learn, and contribute in meaningful ways not only to the code base, but
         to the team culture as well.
       </h2>
-    </>
+    </div>
   );
 }

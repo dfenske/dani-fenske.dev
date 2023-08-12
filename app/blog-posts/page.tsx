@@ -4,7 +4,7 @@ import Card from "../components/card";
 
 export default function BlogPosts() {
   return (
-    <div>
+    <div className="page">
       <h1>Blog Posts</h1>
       <h2>
         During my time at PayScale, I wrote a few blog posts about my learnings

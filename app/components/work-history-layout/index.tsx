@@ -24,7 +24,7 @@ export default function WorkHistoryLayout(props: {
   } = props;
   return (
     <div className="flex-1 flex flex-col sm:flex-row justify-between">
-      <div className="flex-3 sm:mr-3 max-w-[1000px]">
+      <div className="sm:mr-3 sm:max-w-[800px]">
         <h1 className="flex align-center">
           <Tooltip id="back-arrow" className="tooltip hidden sm:block mt-1" />
           <a
@@ -47,7 +47,7 @@ export default function WorkHistoryLayout(props: {
         <h3>Projects</h3>
         {content}
       </div>
-      <div className="flex flex-col sm:p-3 sm:border-l-[1px] sm:border-slate-200">
+      <div className="flex flex-col sm:max-w-[200px] sm:p-3 sm:border-l-[1px] sm:border-slate-200">
         <div className="hidden sm:block max-h-[100px]">{logo}</div>
         <Card header="Technologies" className="sm:p-4">
           <ul className="list-disc ml-4 mt-1">

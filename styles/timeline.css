@@ -62,7 +62,6 @@
 .left::before {
   border-color: transparent transparent transparent #000;
   border-width: 10px 0 10px 10px;
-  border: medium solid #000;
   content: " ";
   height: 0;
   position: absolute;
@@ -80,7 +79,6 @@
 .right::before {
   border-color: transparent #000 transparent transparent;
   border-width: 10px 10px 10px 0;
-  border: medium solid #000;
   content: " ";
   height: 0;
   left: 30px;
@@ -134,6 +132,10 @@
   position: absolute;
   text-wrap: nowrap;
   top: 18px;
+}
+
+.dark .timeline-date {
+  @apply text-slate-200;
 }
 
 .left .timeline-date {

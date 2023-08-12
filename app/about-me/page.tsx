@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutMe() {
   return (
-    <>
+    <div className="page">
       <div className="flex items-start flex-col-reverse sm:flex-row items-center">
         <div className="flex-1">
           <h1>About Me</h1>
@@ -65,6 +65,6 @@ export default function AboutMe() {
           priority
         />
       </div>
-    </>
+    </div>
   );
 }
