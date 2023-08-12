@@ -1,3 +1,28 @@
+# Dani Fenske's Portfolio Website
+
+## Purpose of this site
+
+I listen to [SyntaxFM](https://syntax.fm/), a great podcast about frontend development. A [specific episode](https://syntax.fm/show/326/we-review-resumes-websites-and-online-presence) about resumes and online presence caught my attention. Instead of just having a simple resume, I decided I wanted to showcase my skills and tell people a bit more about me than can fit on one sheet of paper.
+
+## Process
+
+I tried to timebox the creation of the first-draft of this website. I created a backlog for myself in [Notion](https://www.notion.so/) to track and prioritize my goals. My aim was a simple design that still looks polished.
+
+## Tools Used
+
+I chose [NextJS](https://nextjs.org/docs) for its ease of use and many built-in features. I chose [Netlify](https://www.netlify.com) because it offers integration with Github so that your site deploys every time you push code. [TailwindCSS](https://tailwindcss.com/) came built-in in NextJS, and I wanted an excuse to play around with it. _(My takeaway: Tailwind is a nice way to get up and running, but I don't love long class lists and instead am still partial to SASS.)_
+
+**Optimization, speed, responsive design, and accessibility** are all important as well. To achieve these goals, I used Google's [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) to analyze performance, [axe DevTools](https://www.deque.com/axe-devtools-accessibility-testing/) by Deque to pinpoint accessibility issues, and [@next/bundle-analyzer](https://github.com/vercel/next.js/tree/canary/packages/next-bundle-analyzer) to analyze my bundle size.
+
+## Wish list
+
+As every frontend dev can attest, there is always a long list of `TODOs` that grows and grows. I decided to list my ideas here and check them off as I get time to implement them.
+
+- Play with page transitions/animations
+- Implement a more cohesive color theme
+
+## ...and the rest is boilerplate NextJS documentation
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

@@ -33,7 +33,7 @@ export default function MakingOfTheSite() {
         <a href="https://www.notion.so/" target="_blank">
           Notion
         </a>{" "}
-        much down on the page as possible. My aim was a simple design that still
+        to track and prioritize my goals. My aim was a simple design that still
         looks polished.
       </p>
       <h2>Tools Used</h2>
