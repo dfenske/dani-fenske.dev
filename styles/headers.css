@@ -5,6 +5,10 @@
   @apply text-emerald-800;
 }
 
+.dark .callout {
+  @apply text-emerald-400;
+}
+
 .app h1 {
   font-family: var(--font-bungee);
   @apply text-4xl;

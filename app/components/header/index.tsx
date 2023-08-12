@@ -13,7 +13,7 @@ import ThemeToggle from "../theme-toggle";
 
 export default function Header() {
   return (
-    <header className="header flex justify-between items-center text-3xl p-2">
+    <header className="header flex justify-between items-center text-2xl sm:text-3xl p-2">
       <div className="flex">
         <HeaderItem text="Home" href="/" id="home" icon={<FiHome />} />
         <HeaderItem
