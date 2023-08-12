@@ -2,8 +2,8 @@
 
 import {
   FiAward,
-  FiBookOpen,
-  FiEdit,
+  FiSmile,
+  FiBookmark,
   FiHome,
   FiMail,
   FiInfo,
@@ -33,25 +33,25 @@ export default function Header() {
           text="Blog Posts"
           href="/blog-posts"
           id="blog-posts"
-          icon={<FiEdit />}
+          icon={<FiBookmark />}
         />
         <HeaderItem
           text="About Me"
           href="/about-me"
           id="about-me"
-          icon={<FiBookOpen />}
-        />
-        <HeaderItem
-          text="Contact"
-          href="/contact"
-          id="contact"
-          icon={<FiMail />}
+          icon={<FiSmile />}
         />
         <HeaderItem
           text="Making of this site"
           href="/making-of-the-site"
           id="making"
           icon={<FiInfo />}
+        />
+        <HeaderItem
+          text="Contact"
+          href="/contact"
+          id="contact"
+          icon={<FiMail />}
         />
       </div>
       <ThemeToggle />

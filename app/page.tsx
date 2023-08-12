@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import profilePic from "../public/Headshot.png";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -30,14 +28,15 @@ export default function Home() {
     <div className="page flex flex-col">
       <div className="image-container w-[300px] h-[300px] self-center">
         {!imageVisible && <div className="shimmering-skeleton" />}
-        <Image
-          src={profilePic}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="./Headshot.png"
           alt="Picture of me"
           width={300}
           height={300}
           className="image rounded-full dark:border-white border-transparent"
           onLoad={() => setImageVisible(true)}
-          priority
+          fetchPriority="high"
         />
       </div>
       <h1 className="text-center my-2 blinking-cursor">{heading}</h1>

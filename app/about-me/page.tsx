@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function AboutMe() {
   return (
     <div className="page">
@@ -55,14 +53,15 @@ export default function AboutMe() {
             </li>
           </ul>
         </div>
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src="/garden.jpg"
           alt="My garden"
           width={0}
           height={0}
           sizes="100vw"
           className="w-full sm:w-0 sm:ml-6 h-auto flex-[2] rounded-lg"
-          priority
+          fetchPriority="high"
         />
       </div>
     </div>
