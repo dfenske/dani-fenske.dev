@@ -7,7 +7,8 @@ export default function Avanade() {
     <WorkHistoryLayout
       title="Avanade"
       subtitle="Consultant | Sep. 2014 - Dec. 2016"
-      logo={<AvanadeLogo />}
+      sidebarLogo={<AvanadeLogo id="sidebar" />}
+      titleLogo={<AvanadeLogo id="title" />}
       description="I began as an Analyst and worked my way up to Consultant level, working as a vendor at companies such as Microsoft and Ecolab on IoT projects using Microsoft Azure and C#."
       skills={[
         "Client interaction",

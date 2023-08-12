@@ -6,7 +6,8 @@ export default function Outreach() {
     <WorkHistoryLayout
       title="Outreach"
       subtitle="Staff Software Engineer | Aug. 2021 - Present"
-      logo={<OutreachLogo />}
+      sidebarLogo={<OutreachLogo />}
+      titleLogo={<OutreachLogo />}
       description="At Outreach, I began as a frontend engineer and eventually moved
       over to the backend to assist a team in need of more engineers."
       projectContent={

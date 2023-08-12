@@ -11,7 +11,11 @@ export default function WorkHistoryLayout(props: {
   projectContent: React.ReactNode;
   technologies: string[];
   skills: string[];
-  logo?: JSX.Element;
+  /** We have a sidebarLogo and a titleLogo which are the same logo, merely because SVGs have a way of
+   * hiding each other when there are two of the same SVG on the page and you just want to hide one.
+   * I tried many workarounds and got fed up and went with this hack for now. */
+  sidebarLogo?: JSX.Element;
+  titleLogo?: JSX.Element;
 }) {
   const {
     title,
@@ -20,7 +24,8 @@ export default function WorkHistoryLayout(props: {
     projectContent: content,
     technologies,
     skills,
-    logo,
+    sidebarLogo,
+    titleLogo,
   } = props;
   return (
     <div className="flex-1 flex flex-col sm:flex-row justify-between">
@@ -40,7 +45,7 @@ export default function WorkHistoryLayout(props: {
             />
           </a>
           {title}
-          <div className="display:block sm:hidden h-10 ml-3">{logo}</div>
+          <div className="display:block sm:hidden h-10 ml-3">{titleLogo}</div>
         </h1>
         <h2>{subtitle}</h2>
         <h3>{description}</h3>
@@ -48,7 +53,7 @@ export default function WorkHistoryLayout(props: {
         {content}
       </div>
       <div className="flex flex-col sm:max-w-[200px] sm:p-3 sm:border-l-[1px] sm:border-slate-200">
-        <div className="hidden sm:block max-h-[100px]">{logo}</div>
+        <div className="hidden sm:block max-h-[100px]">{sidebarLogo}</div>
         <Card header="Technologies" className="sm:p-4">
           <ul className="list-disc ml-4 mt-1">
             {technologies.map((tech: string) => (

@@ -88,6 +88,7 @@ export default function MakingOfTheSite() {
         and check them off as I get time to implement them.
       </p>
       <ul className="list-disc ml-4">
+        <li>Custom error pages</li>
         <li>Play with page transitions/animations</li>
         <li>Implement a more cohesive color theme</li>
       </ul>

@@ -5,7 +5,8 @@ export default function PayScale() {
   return (
     <WorkHistoryLayout
       title="PayScale"
-      logo={<PayscaleLogo />}
+      sidebarLogo={<PayscaleLogo />}
+      titleLogo={<PayscaleLogo />}
       subtitle="Technical Lead, Sr. Software Engineer | Apr. 2017 - Dec. 2021"
       description="At PayScale, I worked on the consumer website where I maintained the salary survey that crowdsourced pay data, which is the core of the PayScale SaaS product. My team focused heavily on SEO, AB testing, and performance."
       technologies={[

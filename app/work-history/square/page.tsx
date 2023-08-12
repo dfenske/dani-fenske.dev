@@ -6,7 +6,8 @@ export default function Square() {
     <WorkHistoryLayout
       title="Square"
       subtitle="Senior Software Engineer | Jan. 2021 - Aug. 2021"
-      logo={<SquareLogo />}
+      sidebarLogo={<SquareLogo />}
+      titleLogo={<SquareLogo />}
       description={
         <>
           At Square, I worked on the{" "}
