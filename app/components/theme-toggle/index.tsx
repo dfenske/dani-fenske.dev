@@ -14,7 +14,7 @@ export default function ThemeToggle() {
         data-tooltip-id="use-os"
         data-tooltip-content="Use OS setting"
         data-tooltip-place="top"
-        className={`text-sm mr-5 cursor-pointer px-3 py-2 ${
+        className={`text-sm mr-5 cursor-pointer px-3 py-2 hidden sm:block ${
           usingOSPref
             ? "outline outline-2 outline-blue-500 dark:bg-slate-900 bg-blue-50 rounded"
             : "outline outline-[1px] outline-blue-200 rounded"
