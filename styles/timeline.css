@@ -165,7 +165,6 @@
   .timeline-container::before {
     border-color: transparent #000 transparent transparent;
     border-width: 10px 10px 10px 0;
-    border: medium solid #000;
     left: 60px;
   }
 
