@@ -24,25 +24,6 @@ body {
   }
 }
 
-.image {
-  color: transparent;
-}
-
-.image-container {
-  @apply rounded-full;
-  background-color: #5788a7;
-  overflow: hidden;
-  position: relative;
-}
-
-.shimmering-skeleton {
-  @apply bg-gradient-to-r from-transparent via-[#273A49] to-transparent;
-  animation: shimmer 2s infinite;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
 .quote {
   @apply bg-slate-100;
   @apply border-2;

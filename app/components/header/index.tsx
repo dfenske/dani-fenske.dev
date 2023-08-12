@@ -1,14 +1,7 @@
 "use client";
 
-import {
-  FiAward,
-  FiSmile,
-  FiBookmark,
-  FiHome,
-  FiMail,
-  FiInfo,
-  FiTrendingUp,
-} from "react-icons/fi";
+import { FiBookmark, FiHome, FiInfo, FiTrendingUp } from "react-icons/fi";
+import { PiGraduationCap, PiCarrot, PiChatDots } from "react-icons/pi";
 import HeaderItem from "./HeaderItem";
 import ThemeToggle from "../theme-toggle";
 
@@ -27,7 +20,7 @@ export default function Header() {
           text="Education"
           href="/education"
           id="education"
-          icon={<FiAward />}
+          icon={<PiGraduationCap />}
         />
         <HeaderItem
           text="Blog Posts"
@@ -39,7 +32,7 @@ export default function Header() {
           text="About Me"
           href="/about-me"
           id="about-me"
-          icon={<FiSmile />}
+          icon={<PiCarrot />}
         />
         <HeaderItem
           text="Making of this site"
@@ -51,7 +44,7 @@ export default function Header() {
           text="Contact"
           href="/contact"
           id="contact"
-          icon={<FiMail />}
+          icon={<PiChatDots />}
         />
       </div>
       <ThemeToggle />

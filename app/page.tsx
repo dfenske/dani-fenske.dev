@@ -26,15 +26,14 @@ export default function Home() {
 
   return (
     <div className="page flex flex-col">
-      <div className="image-container w-[300px] h-[300px] self-center">
-        {!imageVisible && <div className="shimmering-skeleton" />}
+      <div className="rounded-full bg-[#5788a7] overflow-hidden relative w-[300px] h-[300px] self-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="./Headshot.png"
           alt="Picture of me"
           width={300}
           height={300}
-          className="image rounded-full dark:border-white border-transparent"
+          className="rounded-full dark:border-white border-transparent"
           onLoad={() => setImageVisible(true)}
           fetchPriority="high"
         />
