@@ -114,7 +114,6 @@
 
 .content:hover {
   @apply shadow-xl;
-  @apply bg-stone-100;
 }
 
 .dark .content {
@@ -127,7 +126,6 @@
 
 .dark .content:hover {
   @apply shadow-slate-700;
-  @apply bg-stone-900;
 }
 
 .timeline-date {

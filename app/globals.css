@@ -53,4 +53,5 @@ body {
   font-size: 1rem;
   padding: 6px 12px;
   font-family: var(--font-karla);
+  z-index: 10;
 }

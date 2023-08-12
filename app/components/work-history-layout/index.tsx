@@ -39,7 +39,8 @@ export default function WorkHistoryLayout(props: {
               style={{ display: "inline-block", fontSize: "2rem" }}
             />
           </a>
-          {title} <div className="h-10 ml-3">{logo}</div>
+          {title}
+          <div className="display:block sm:hidden h-10 ml-3">{logo}</div>
         </h1>
         <h2>{subtitle}</h2>
         <h3>{description}</h3>
@@ -47,6 +48,7 @@ export default function WorkHistoryLayout(props: {
         {content}
       </div>
       <div className="flex flex-col sm:p-3 sm:border-l-[1px] sm:border-slate-200">
+        <div className="hidden sm:block max-h-[100px]">{logo}</div>
         <Card header="Technologies" className="sm:p-4">
           <ul className="list-disc ml-4 mt-1">
             {technologies.map((tech: string) => (
