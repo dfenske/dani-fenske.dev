@@ -101,7 +101,7 @@
 
 /* The actual content */
 .content {
-  @apply text-#000;
+  @apply text-black;
   border-radius: 8px;
   border: 4px solid #000;
   position: relative;
@@ -109,7 +109,7 @@
 }
 
 .content a {
-  @apply text-#000;
+  @apply text-black;
 }
 
 .content:hover {
@@ -121,7 +121,7 @@
 }
 
 .dark .content a {
-  @apply text-#fff;
+  @apply text-white;
 }
 
 .dark .content:hover {
