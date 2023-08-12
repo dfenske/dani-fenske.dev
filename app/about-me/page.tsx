@@ -62,6 +62,7 @@ export default function AboutMe() {
           height={0}
           sizes="100vw"
           className="w-full sm:w-0 sm:ml-6 h-auto flex-[2] rounded-lg"
+          priority
         />
       </div>
     </>

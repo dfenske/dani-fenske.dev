@@ -1,7 +1,6 @@
 "use client";
 import React, { createContext, useState, useContext, useEffect } from "react";
 import { karla, bungee } from "@/styles/fonts";
-import clsx from "clsx";
 
 interface Theme {
   toggleTheme: () => void;
@@ -83,13 +82,11 @@ export const ThemeProvider = (props: { children: React.ReactNode }) => {
 
   return (
     <html lang="en" className={`${bungee.variable} ${karla.variable}`}>
+      {/* To prevent the theme from flashing incorrectly, hide content until theme has been initialized */}
       <body
-        className={clsx(
-          "app flex flex-col min-h-screen dark:bg-black dark:text-white",
-          {
-            ["hidden"]: !themeInitialized,
-          }
-        )}
+        className={`app flex flex-col min-h-screen dark:bg-black dark:text-white ${
+          themeInitialized ? "" : "hidden"
+        }`}
       >
         <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
       </body>
