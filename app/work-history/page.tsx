@@ -59,7 +59,7 @@ export default function WorkHistory() {
             subheader="Consultant"
             img={
               <div className="h-[100px]">
-                <AvanadeLogo />
+                <AvanadeLogo id="timeline" />
               </div>
             }
             href="/work-history/avanade"
