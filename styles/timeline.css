@@ -7,7 +7,7 @@
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  @apply bg-#000;
+  @apply bg-black;
   @apply rounded-full;
   animation: fade-in-top-to-bottom 2s ease-in-out forwards;
   bottom: 0;
