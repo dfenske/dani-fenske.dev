@@ -6,7 +6,7 @@ import {
   FiEdit,
   FiHome,
   FiMail,
-  FiLayout,
+  FiInfo,
   FiTrendingUp,
 } from "react-icons/fi";
 import HeaderItem from "./HeaderItem";
@@ -51,7 +51,7 @@ export default function Header() {
           text="Making of this site"
           href="/making-of-the-site"
           id="making"
-          icon={<FiLayout />}
+          icon={<FiInfo />}
         />
       </div>
       <ThemeToggle />
