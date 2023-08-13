@@ -26,6 +26,7 @@ export default function Home() {
 
   return (
     <div className="page flex flex-col">
+      ``
       <div className="rounded-full bg-[#5788a7] overflow-hidden relative w-[300px] h-[300px] self-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -47,9 +48,10 @@ export default function Home() {
         I am a full-stack software engineer in Seattle, WA, specializing in
         creating websites using React and TypeScript.
         <br />
-        <br />I will join your team and ramp up fast, document everything I
-        learn, and contribute in meaningful ways not only to the code base, but
-        to the team culture as well.
+        <br />
+        If I become part of your team, I&qpos;ll quickly learn and share
+        everything I discover, making valuable contributions both to the code,
+        and the team culture as well.
       </h2>
     </div>
   );

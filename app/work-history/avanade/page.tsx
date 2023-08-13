@@ -9,7 +9,7 @@ export default function Avanade() {
       subtitle="Consultant | Sep. 2014 - Dec. 2016"
       sidebarLogo={<AvanadeLogo id="sidebar" />}
       titleLogo={<AvanadeLogo id="title" />}
-      description="I began as an Analyst and worked my way up to Consultant level, working as a vendor at companies such as Microsoft and Ecolab on IoT projects using Microsoft Azure and C#."
+      description="I began as an Analyst and worked my way up to the Consultant level, consulting for companies such as Microsoft and Ecolab on IoT (Internet of Things) projects using Microsoft Azure and C#."
       skills={[
         "Client interaction",
         "Communication",
@@ -22,21 +22,28 @@ export default function Avanade() {
         <>
           <div className="mb-4">
             Avanade is a consultancy jointly owned by Accenture and Microsoft.
-            Therefore, most of my work was focused on C# and Azure cloud
-            solutions. I passed many Azure exams to get certified as an{" "}
-            <span className="callout">Azure Solutions Architect</span>.{" "}
+            Most of my work was focused on C# and Azure cloud solutions. I
+            passed many Azure exams to get certified as an{" "}
+            <span className="callout">
+              <a
+                target="_blank"
+                href="https://learn.microsoft.com/en-us/certifications/azure-solutions-architect/"
+              >
+                Azure Solutions Architect
+              </a>
+            </span>
+            .{" "}
           </div>
           <div>
             My last project was at Ecolab, where I travelled to Minneapolis
             every week for a few months. I served as the{" "}
             <span className="callout">
-              Application Lead for a team of 6 developers
+              Application Lead for a team of six developers
             </span>
             . I led the effort to design, build and configure applications,
             acting as the primary point of contact with the client. This role
-            required in-depth experience in developing production apps using
-            Azure IoT, Azure Stream Analytics, .NET, Azure SQL/Hive, and REST
-            APIs.
+            required in-depth experience developing production apps using Azure
+            IoT, Azure Stream Analytics, .NET, Azure SQL/Hive, and REST APIs.
           </div>
           <div className="quote">
             &quot;Danielle not only managed her team but also interacted with

@@ -46,8 +46,8 @@ export default function Education() {
         .
       </p>
       <p>
-        And finally, I actually spent most of my free time in the music
-        building, where I accompanied primarily vocalists on the piano.
+        And finally, I spent most of my free time in the music building, where I
+        accompanied vocalists on the piano.
       </p>
     </div>
   );

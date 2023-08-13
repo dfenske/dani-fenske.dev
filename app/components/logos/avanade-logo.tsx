@@ -1,6 +1,5 @@
 export default function Avanade(props: { id: string }) {
   const { id } = props;
-  console.log(`id: ${id}`);
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
