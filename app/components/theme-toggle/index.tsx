@@ -10,9 +10,11 @@ export default function ThemeToggle() {
     <div className="flex items-center">
       <Tooltip id="use-os" className="tooltip hidden sm:block mt-1" />
       <button
-        aria-label="Use OS setting"
+        aria-label={!usingOSPref ? "Use OS theme" : "Don't use OS theme"}
         data-tooltip-id="use-os"
-        data-tooltip-content="Use OS setting"
+        data-tooltip-content={
+          !usingOSPref ? "Use OS theme" : "Don't use OS theme"
+        }
         data-tooltip-place="top"
         className={`text-sm mr-5 cursor-pointer px-3 py-2 hidden sm:block ${
           usingOSPref
