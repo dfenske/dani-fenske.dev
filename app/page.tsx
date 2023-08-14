@@ -48,9 +48,9 @@ export default function Home() {
         creating websites using React and TypeScript.
         <br />
         <br />
-        If I become part of your team, I&apos;ll quickly learn and share
-        everything I discover, making valuable contributions to the code as well
-        as the team culture.
+        If I join your team, I&apos;ll quickly learn and share everything I
+        discover, making valuable contributions to the code as well as the team
+        culture.
       </h2>
     </div>
   );
