@@ -20,7 +20,11 @@ export default function Card(props: {
     </div>
   );
   return href ? (
-    <a aria-label={`${header}`} href={href}>
+    <a
+      className="dark:text-white dark:hover:text-blue-200 text-black"
+      aria-label={`${header}`}
+      href={href}
+    >
       {content}
     </a>
   ) : (

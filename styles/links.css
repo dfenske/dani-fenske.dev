@@ -8,15 +8,12 @@ directive, and Tailwind overrides these styles. */
   @apply text-blue-700;
 }
 
-/* I wanted to avoid underlining links, but I couldn't find a good color 
-combination that made aXe dev tools happy in dark mode. */
-.dark .app a {
-  @apply text-white;
-  @apply underline;
+.dark a {
+  @apply text-blue-300;
 }
 
-.dark .app a:hover {
-  @apply text-blue-200;
+.dark a:hover {
+  @apply text-blue-400;
 }
 
 .header a {

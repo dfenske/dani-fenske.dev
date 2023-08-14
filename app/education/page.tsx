@@ -19,14 +19,7 @@ export default function Education() {
         modules. I collaborated with Lewis and Clark College and St. Olaf
         College, acting as inter-collegiate connection. Our research studied
         programming languages including Haskell, Python, JavaScript&apos;s
-        parallel API RiverTrail, and CUDASkills. Here is the{" "}
-        <a
-          aria-label="poster"
-          href="https://www.linkedin.com/in/daniellefenske/details/experience/405172858/multiple-media-viewer/?profileId=ACoAAA1rpJoB7CncuO4f_lzH4naFY9d7xa7sJtk&treasuryMediaId=50018490&type=DOCUMENT&locale=fr_FR"
-        >
-          poster
-        </a>{" "}
-        we created based on our research.
+        parallel API RiverTrail, and CUDASkills.
       </p>
 
       <p className="mb-4">
