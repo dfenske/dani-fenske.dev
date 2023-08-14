@@ -36,7 +36,7 @@ export default function Square() {
           <div className="my-4">
             During my time at Square, I contributed to the team by implementing
             a frontend standards framework. One part of this was during
-            &quot;Fix-it Week&quot;, I implemented{" "}
+            &quot;Fix-it Week&quot; when I implemented{" "}
             <span className="callout">linting for our handlebars files</span>{" "}
             which had very unstandardized white space. I did this in two days,
             which may sound like a long time to add a linter. But the{" "}

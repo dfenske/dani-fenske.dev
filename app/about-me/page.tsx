@@ -42,7 +42,7 @@ export default function AboutMe() {
           <h2>Where you might find me </h2>
           <ul className="list-disc ml-4 flex-1">
             <li>
-              Poking around my veggie garden. I have about 400&sup2;ft of raised
+              Poking around my veggie garden. I have about 400ft&sup2; of raised
               beds. This year&apos;s garden-success award goes to my 1 pound
               tomato.
             </li>

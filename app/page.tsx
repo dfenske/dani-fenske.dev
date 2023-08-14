@@ -26,7 +26,6 @@ export default function Home() {
 
   return (
     <div className="page flex flex-col">
-      ``
       <div className="rounded-full bg-[#5788a7] overflow-hidden relative w-[300px] h-[300px] self-center">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -49,9 +48,9 @@ export default function Home() {
         creating websites using React and TypeScript.
         <br />
         <br />
-        If I become part of your team, I&qpos;ll quickly learn and share
-        everything I discover, making valuable contributions both to the code,
-        and the team culture as well.
+        If I become part of your team, I&apos;ll quickly learn and share
+        everything I discover, making valuable contributions to the code as well
+        as the team culture.
       </h2>
     </div>
   );
