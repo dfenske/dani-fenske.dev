@@ -1,20 +1,20 @@
+"use client";
+
 import { FiGithub, FiLinkedin, FiPhone, FiSend } from "react-icons/fi";
 
 export default function Contact() {
   // Very simple email obfuscation
-  const user = "dani.fenske";
-  const site = "gmail";
+  const handleClick = () => {
+    window.location.href = "mailto:dani.fenske@gmail.com";
+  };
 
   return (
     <>
       <h1>Contact</h1>
       <h2>
-        <a
-          aria-label="email"
-          target="_blank"
-          href={`mailto:&#100;&#097;&#110;&#105;&#046;&#102;&#101;&#110;&#115;&#107;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;`}
-        >
-          <FiSend className="mx-2 inline" /> dani.fenske[at]gmail.com
+        <a aria-label="email" target="_blank" onClick={handleClick}>
+          <FiSend className="mx-2 inline" />
+          dani.fenske[at]gmail.com
         </a>
       </h2>
       <h2>
