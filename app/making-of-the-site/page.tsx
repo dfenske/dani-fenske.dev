@@ -54,7 +54,8 @@ export default function MakingOfTheSite() {
         came built-in in NextJS and I wanted an excuse to play around with it.{" "}
         <span className="italic">
           (My takeaway: Tailwind is a nice way to get up and running, but I
-          don&apos;t love long class lists and instead am still partial to SASS.
+          don&apos;t love long class lists and instead am still partial to
+          SASS.)
         </span>
       </p>
       <p>
