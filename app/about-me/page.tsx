@@ -2,6 +2,16 @@ export default function AboutMe() {
   return (
     <>
       <div className="flex items-start flex-col-reverse lg:flex-row">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/garden.jpg"
+          alt="My garden"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full lg:w-0 lg:ml-6 lg:mt-4 h-auto flex-[2] rounded-lg"
+          fetchPriority="high"
+        />
         <div className="flex-1">
           <h1>About Me</h1>
           <h2>Observations from peers and friends</h2>
@@ -55,8 +65,8 @@ export default function AboutMe() {
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/garden.jpg"
-          alt="My garden"
+          src="/kid.jpg"
+          alt="Me as a kid on my big desktop computer"
           width={0}
           height={0}
           sizes="100vw"
