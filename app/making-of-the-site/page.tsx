@@ -90,7 +90,6 @@ export default function MakingOfTheSite() {
       </p>
       <ul className="list-disc ml-4">
         <li>A contact form</li>
-        <li>Custom error pages</li>
         <li>Play with page transitions/animations</li>
         <li>Implement a more cohesive color theme</li>
       </ul>
