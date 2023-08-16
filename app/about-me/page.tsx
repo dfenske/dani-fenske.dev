@@ -1,7 +1,7 @@
 export default function AboutMe() {
   return (
     <>
-      <div className="flex items-start flex-col-reverse sm:flex-row items-center">
+      <div className="flex items-start flex-col-reverse lg:flex-row">
         <div className="flex-1">
           <h1>About Me</h1>
           <h2>Observations from peers and friends</h2>
@@ -60,7 +60,7 @@ export default function AboutMe() {
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full sm:w-0 sm:ml-6 h-auto flex-[2] rounded-lg"
+          className="w-full lg:w-0 lg:ml-6 lg:mt-4 h-auto flex-[2] rounded-lg"
           fetchPriority="high"
         />
       </div>
