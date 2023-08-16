@@ -12,7 +12,12 @@ export default function Contact() {
     <>
       <h1>Contact</h1>
       <h2>
-        <a aria-label="email" target="_blank" onClick={handleClick}>
+        <a
+          className="cursor-pointer"
+          aria-label="email"
+          target="_blank"
+          onClick={handleClick}
+        >
           <FiSend className="mx-2 inline" />
           dani.fenske[at]gmail.com
         </a>
