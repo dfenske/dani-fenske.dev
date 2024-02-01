@@ -11,7 +11,7 @@ export default function WorkHistory() {
       <h1 className="self-center">Work History</h1>
       <Timeline>
         <>
-          <div className="timeline-date">Aug. 2021 - Present</div>
+          <div className="timeline-date">Aug. 2021 - Oct. 2023</div>
           <Card
             header="Outreach"
             subheader="Staff Software Engineer"

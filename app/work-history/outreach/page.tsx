@@ -5,7 +5,7 @@ export default function Outreach() {
   return (
     <WorkHistoryLayout
       title="Outreach"
-      subtitle="Staff Software Engineer | Aug. 2021 - Present"
+      subtitle="Staff Software Engineer | Aug. 2021 - Oct. 2023"
       sidebarLogo={<OutreachLogo />}
       titleLogo={<OutreachLogo />}
       description="At Outreach, I began as a frontend engineer and eventually moved
